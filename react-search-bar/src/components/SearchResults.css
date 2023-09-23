@@ -1,0 +1,43 @@
+.results-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 8px #ddd;
+  border-radius: 10px;
+  margin-top: 1rem;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.search-result {
+  padding: 10px 20px;
+}
+
+.search-result:hover {
+  background-color: beige;
+  cursor: pointer;
+}
+
+@media all and (min-width: 1024px) { 
+  .results-list {
+    background-color: red;
+  }
+}
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+  .results-list {
+    background-color: green;
+  }
+}
+ 
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .results-list {
+    background-color: blue;
+  }
+}
+ 
+@media all and (max-width: 480px) {
+  .results-list {
+    background-color: yellow;
+  }
+}
